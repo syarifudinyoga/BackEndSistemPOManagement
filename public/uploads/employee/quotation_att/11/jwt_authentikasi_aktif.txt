@@ -1,0 +1,11 @@
+{
+          headers: {
+            Authorization: localStorage.getItem('token')
+          },
+
+
+const auth = localStorage.getItem('token')
+        if(auth==null){
+          alert("Login Dulu")
+          this.$router.push("/");
+        }else{
